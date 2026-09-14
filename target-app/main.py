@@ -14,3 +14,8 @@ def home():
         "status": "healthy",
         "message": "Target application is running",
     }
+@app.get("/health")
+def health():
+    return {
+        "status": "healthy"
+    }
